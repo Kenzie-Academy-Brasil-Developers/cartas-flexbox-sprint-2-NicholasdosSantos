@@ -1,15 +1,21 @@
 html {
-    font-family: "Raleway", "Helvetica", sans-serif;
-    font-weight: 400;
-    color: #2F3442;
-    height: 100%;
-    background-color: #FFFFFF;
+  font-family: "Raleway", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #2F3442;
+  height: 100%;
+  background-color: #FFFFFF;
 }
 
 .icon {color: #BCD2DA;}
 
+.cardGroup{
+  max-width: 320px;
+}
+
 .card {
     /* display, flex-direction */
+    display: flex;
+    flex-direction: column;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -17,6 +23,10 @@ html {
 
 .card__description {
     /* display, flex-direction, justify-content, align-items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px 0;
 }
 
@@ -41,7 +51,8 @@ html {
 
 .cardGroup {
     /* display */
-  
+    display: flex;
+    margin-inline: auto;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -49,7 +60,9 @@ html {
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-  
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100%;
       border: none;
       border-radius: 0;
     }
@@ -60,4 +73,13 @@ html {
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100%; 
+    }
+
+    @media (min-width: 738px){
+      .cardGroup{
+        max-width: 710px;
+      }
     }
