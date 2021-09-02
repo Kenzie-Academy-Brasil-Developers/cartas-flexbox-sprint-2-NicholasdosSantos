@@ -10,6 +10,8 @@ html {
 
 .cardGroup{
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -81,5 +83,6 @@ html {
     @media (min-width: 738px){
       .cardGroup{
         max-width: 710px;
+        flex-direction: row;
       }
     }
